@@ -1,0 +1,32 @@
+{
+  "name": "cctd",
+  "owner": {
+    "name": "akasetomo",
+    "email": "akasetomo@github"
+  },
+  "metadata": {
+    "description": "Claude Code Task Dashboard - SDD-oriented task management",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "cctd",
+      "source": "./",
+      "description": "SDD-oriented task management for Claude Code. Manages User Stories and Tasks as markdown files with status flow optimized for AI agent workflows.",
+      "version": "1.0.0",
+      "author": {
+        "name": "akasetomo"
+      },
+      "license": "MIT",
+      "keywords": [
+        "claude-skill",
+        "claude-code",
+        "task-management",
+        "sdd",
+        "project-management"
+      ],
+      "category": "project-management",
+      "tags": ["tasks", "stories", "sdd", "agile", "project-management"]
+    }
+  ]
+}

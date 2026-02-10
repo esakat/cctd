@@ -1,0 +1,13 @@
+# Slack cache (personal workspace data)
+.channels_cache_v2.json
+.users_cache.json
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Task data (user-specific, initialized per project)
+.tasks/tasks/
+.tasks/stories/
+
+# OS files
+.DS_Store
