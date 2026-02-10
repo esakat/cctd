@@ -1,7 +1,7 @@
 {
   "name": "cctd",
   "description": "SDD-oriented task management for Claude Code. Interactive planning (/cctd:spec) with Socratic discovery, User Story creation, task breakdown, and SDD spec writing. Teammate dispatch with Agent + Model (opus/sonnet) selection.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "esakat"
   },
