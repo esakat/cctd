@@ -2,4 +2,4 @@
 # ID|Status|Title|Labels|Priority|Created
 
 # Tasks
-# ID|Status|Title|Agent|Deps|Created
+# ID|Status|Title|Agent|Model|Deps|Created
