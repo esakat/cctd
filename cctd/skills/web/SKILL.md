@@ -1,5 +1,5 @@
 ---
-name: web
+name: cctd:web
 description: "Start CCTD Web visualizer in the background to view stories and tasks in a browser."
 ---
 

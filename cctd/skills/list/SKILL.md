@@ -1,5 +1,5 @@
 ---
-name: list
+name: cctd:list
 description: "Show overview of all stories and tasks. Quick status check with filtering by status, priority, agent, model, or story ID."
 ---
 

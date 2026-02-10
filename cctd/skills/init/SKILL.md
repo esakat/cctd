@@ -1,5 +1,5 @@
 ---
-name: init
+name: cctd:init
 description: "Initialize .tasks/ directory for CCTD task management. Run once at the start of a project to set up the directory structure."
 ---
 

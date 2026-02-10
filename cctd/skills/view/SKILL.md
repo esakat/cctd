@@ -1,5 +1,5 @@
 ---
-name: view
+name: cctd:view
 description: "Show detailed view of a story or task. Auto-detects type by ID format: S001 = story, S001-001 = task."
 ---
 

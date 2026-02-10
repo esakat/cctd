@@ -1,5 +1,5 @@
 ---
-name: spec
+name: cctd:spec
 description: "Interactive planning skill. Brainstorm requirements with user, create stories, break down tasks, and write SDD specs. Supports full flow from scratch, partial flow from existing story, or single task spec writing. Designed for teammate dispatch in Phase 4."
 ---
 
