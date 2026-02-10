@@ -1,0 +1,9 @@
+{
+  "name": "cctd",
+  "description": "SDD-oriented task management for Claude Code. Manages User Stories and Tasks as markdown files with status flow optimized for AI agent workflows.",
+  "version": "1.0.0",
+  "author": {
+    "name": "esakat"
+  },
+  "license": "MIT"
+}

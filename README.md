@@ -17,15 +17,21 @@ User Stories（親）と Tasks（子）をマークダウンで管理し、AIエ
 
 ## Install
 
-### As Claude Code Skill
+### Plugin（推奨）
 
-```bash
-# プロジェクトに skill/ ディレクトリをコピー
-cp -r skill/cctd /path/to/your-project/.claude/skills/cctd
-cp skill/cctd.skill /path/to/your-project/.claude/skills/cctd.skill
+```
+/plugin marketplace add esakat/cctd
+/plugin install cctd@cctd
 ```
 
-### As Slash Commands (Legacy)
+### Manual
+
+```bash
+# スキルファイルをプロジェクトにコピー
+cp -r cctd/skills/cctd /path/to/your-project/.claude/skills/cctd
+```
+
+### Slash Commands (Legacy)
 
 ```bash
 # .claude/commands/ にコマンドファイルをコピー
@@ -82,6 +88,26 @@ BACKLOG ⚪ → DEFINED 🔵 → AI_READY 🟣 → IN_PROGRESS 🟡 → TESTING 
 └── tasks/
     ├── S001-001.md   # Task detail
     └── S001-002.md
+```
+
+## Repository Structure
+
+```
+cctd/                              # Repository root = Marketplace
+├── .claude-plugin/
+│   └── marketplace.json           # Marketplace catalog
+├── cctd/                          # Plugin directory
+│   ├── .claude-plugin/
+│   │   └── plugin.json            # Plugin manifest
+│   └── skills/
+│       └── cctd/
+│           ├── SKILL.md           # Skill definition
+│           ├── references/        # Command reference docs
+│           └── scripts/           # Init scripts
+├── .claude/commands/              # Legacy slash commands
+├── .tasks/index.md                # Empty template
+├── CLAUDE.md
+└── README.md
 ```
 
 ## CLAUDE.md Integration
