@@ -1,7 +1,7 @@
 {
   "name": "cctd",
   "description": "SDD-oriented task management for Claude Code. Interactive planning (/cctd:spec), work execution with native Tasks integration (/cctd:start), and web visualization (/cctd:web).",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": {
     "name": "esakat"
   },
