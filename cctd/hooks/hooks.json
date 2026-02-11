@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "## CCTD Task Management Active\n\nIf `.tasks/` directory exists in the project, CCTD task management is enabled.\n\n### Core Rules\n1. **Status updates require BOTH files**: Always update individual task/story files (`.tasks/tasks/{ID}.md` and `.tasks/stories/{ID}.md`) AND `index.md`. Never update `index.md` alone — cctd-web reads individual files with priority.\n2. **Work Log**: Append `[YYYY-MM-DD] {action}` to the `## Work Log` section of individual files on every status change.\n3. **Story auto-status**: Any child task IN_PROGRESS → story IN_PROGRESS. All children DONE → story DONE.\n\n### Working on CCTD Stories\nWhen user says \"S001の作業して\", \"work on S001\", or similar:\n1. Read `.tasks/stories/{ID}.md` and all child task files\n2. Create standard Tasks (TaskCreate) for AI_READY tasks with `metadata: { cctdId: \"{TaskID}\" }`\n3. Map CCTD Deps to standard Tasks blockedBy\n4. Sync progress: standard Task in_progress → CCTD IN_PROGRESS, completed → CCTD DONE\n5. Always update individual files + index.md + Work Log on sync\n\nFor detailed format specs: read `cctd/skills/_shared/format.md`\nFor workflow rules: read `cctd/skills/_shared/workflow.md`"
+          }
+        ]
+      }
+    ]
+  }
+}

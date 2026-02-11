@@ -2,11 +2,13 @@
 
 ## タスク管理
 SDD指向のタスク管理。ストーリー(親) → タスク(子)をMarkdownで管理。データは `.tasks/` に保存。
+Claude Code標準のTasks Systemを実行エンジンとして使用し、CCTDに記録・可視化を同期。
 
 ### コマンド
+- `/cctd:spec` - 要件発見→ストーリー→タスク分割→SDD仕様
+- `/cctd:start {ID}` - ストーリーの作業開始（標準Tasks連携）
 - `/cctd:list` - ストーリー/タスク一覧
 - `/cctd:view {ID}` - 詳細表示
-- `/cctd:spec` - 要件発見→ストーリー→タスク分割→SDD仕様
 - `/cctd:web` - Webビジュアライザ起動
 - `/cctd:init` - .tasks/ 初期化
 

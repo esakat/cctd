@@ -99,3 +99,16 @@ When $ARGUMENTS is a task ID (e.g., S001-001):
 1. Read the task file and its parent story
 2. Execute Phase 4 for this single task
 3. If spec already exists, refine/update based on additional context from $ARGUMENTS
+
+## Post-Completion Guide
+
+After Phase 4 completes (all tasks AI_READY), display:
+
+```
+✅ 全タスクのSDD仕様書が完成しました。
+
+▶ 次のステップ:
+  /cctd:start {StoryID}  — 作業を開始（標準Tasks連携で実行管理）
+  /cctd:list              — タスク一覧を確認
+  /cctd:web               — Webビジュアライザで進捗を可視化
+```

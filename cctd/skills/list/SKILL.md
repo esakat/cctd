@@ -42,4 +42,11 @@ $ARGUMENTS applied as AND filters:
 
 ## Footer
 
-End with: `/cctd:view {ID}` `/cctd:spec`
+End with:
+
+```
+💡 ヒント:
+  /cctd:view {ID}    — 詳細表示
+  /cctd:start {ID}   — 作業開始
+  /cctd:spec          — 新しいストーリーを作成
+```

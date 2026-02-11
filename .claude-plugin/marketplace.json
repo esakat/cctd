@@ -4,15 +4,15 @@
     "name": "esakat"
   },
   "metadata": {
-    "description": "Claude Code Task Dashboard - SDD-oriented task management with interactive planning and teammate dispatch",
-    "version": "2.0.1"
+    "description": "Claude Code Task Dashboard - SDD-oriented task management with native Tasks integration and web visualization",
+    "version": "3.0.0"
   },
   "plugins": [
     {
       "name": "cctd",
       "source": "./cctd",
-      "description": "SDD-oriented task management for Claude Code. Interactive planning (/cctd:spec) with Socratic discovery, User Story creation, task breakdown, and SDD spec writing. Teammate dispatch with Agent + Model (opus/sonnet) selection.",
-      "version": "2.0.1",
+      "description": "SDD-oriented task management for Claude Code. Interactive planning (/cctd:spec), work execution with native Tasks integration (/cctd:start), and web visualization (/cctd:web).",
+      "version": "3.0.0",
       "author": {
         "name": "esakat"
       },
